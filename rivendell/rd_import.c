@@ -173,7 +173,7 @@ int RD_ImportCart(struct rd_cartimport *cartimport[],
 	CURLFORM_PTRNAME,
 	"LOGIN_NAME",
 	CURLFORM_COPYCONTENTS,
-	curl_easy_escape(curl,username,0),
+	username,
 	CURLFORM_END); 
 
   curl_formadd(&first,
@@ -181,7 +181,7 @@ int RD_ImportCart(struct rd_cartimport *cartimport[],
 	CURLFORM_PTRNAME,
 	"PASSWORD",
         CURLFORM_COPYCONTENTS,
-	curl_easy_escape(curl,passwd,0),
+	passwd,
 	CURLFORM_END);
 
   curl_formadd(&first,
@@ -189,7 +189,7 @@ int RD_ImportCart(struct rd_cartimport *cartimport[],
 	CURLFORM_PTRNAME,
 	"TICKET",
         CURLFORM_COPYCONTENTS,
-	curl_easy_escape(curl,ticket,0),
+        ticket,
 	CURLFORM_END);
 
   sprintf(cart_buffer,"%u",cartnum);
@@ -260,7 +260,7 @@ int RD_ImportCart(struct rd_cartimport *cartimport[],
 	CURLFORM_PTRNAME,
 	"GROUP_NAME",
         CURLFORM_COPYCONTENTS,
-	curl_easy_escape(curl,checked_group_name,0),
+	checked_group_name,
 	CURLFORM_END);
 
   curl_formadd(&first,
@@ -268,7 +268,7 @@ int RD_ImportCart(struct rd_cartimport *cartimport[],
 	CURLFORM_PTRNAME,
 	"TITLE",
         CURLFORM_COPYCONTENTS,
-        curl_easy_escape(curl,title,0),
+        title,
 	CURLFORM_END);
 
   curl_formadd(&first,

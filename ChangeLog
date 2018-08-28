@@ -342,3 +342,6 @@
 	* Changed PACKAGE_RELEASE to version 1.0.0.
 2018-07-02 Fred Gleason <fredg@paravelsystems.com>
 	* Fixed bugs that broke the 'make rpm' target.
+2018-08-28 Fred Gleason <fredg@paravelsystems.com>
+	* Fixed a bug in RD_ImportCart() that caused string values to be
+	double-escaped.
