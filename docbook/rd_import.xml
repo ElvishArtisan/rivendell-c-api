@@ -32,6 +32,7 @@
     <funcsynopsisinfo>#include &lt;rivendell/rd_import.h&gt;</funcsynopsisinfo>
     <funcprototype>
     <funcdef>int <function>RD_Import</function></funcdef>
+      <paramdef>struct rd_cartimport *<parameter>import[]</parameter></paramdef>
       <paramdef>const char <parameter>hostname[]</parameter></paramdef>
       <paramdef>const char <parameter>username[]</parameter></paramdef>
       <paramdef>const char <parameter>passwd[]</parameter></paramdef>
@@ -47,6 +48,7 @@
       <paramdef>const char <parameter>title[]</parameter></paramdef>
       <paramdef>const char <parameter>filename[]</parameter></paramdef>
       <paramdef>const char <parameter>user_agent[]</parameter></paramdef>
+      <paramdef>unsigned *<parameter>numrecs</parameter></paramdef>
     </funcprototype> 
     </funcsynopsis>
 
@@ -81,6 +83,20 @@
         </row>
       </thead>
       <tbody>
+        <row>
+          <entry>
+            *import
+          </entry>
+          <entry>
+	    Pointer to rd_cartimport structure
+          </entry>
+          <entry>
+            Memory location to store import information
+          </entry>
+          <entry>
+            Mandatory
+          </entry>
+        </row>
         <row>
           <entry>
             hostname
@@ -291,9 +307,38 @@
             Optional (default is Rivendell-C-API/x.x.x)
           </entry>
         </row>
+        <row>
+          <entry>
+            *numrecs
+          </entry>
+          <entry>
+          pointer to integer
+          </entry>
+          <entry>
+            memory location for number of records returned
+          </entry>
+          <entry>
+            Mandatory
+          </entry>
+        </row>
       </tbody>
     </tgroup>
   </table>
+
+  <para>
+    When successful function will return the number of records sent (numrecs)
+    and a rd_cartimport structure which 
+    is stored in the provided memory locations. The rd_cartimport structure
+    has the following fields:
+  </para>
+  <programlisting>
+    struct rd_cartimport{
+          int response_code;                  /* HTTP Response Code */
+          char error_string[256];             /* Error Explanation */
+          unsigned cart_number;               /* Destination Cart Number */
+          unsigned cut_number;                /* Destination Cut Number */
+    };
+  </programlisting>
 
   </refsect1>
   <refsect2 id='returns'><title>RETURN VALUE</title>
