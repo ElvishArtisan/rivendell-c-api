@@ -352,3 +352,5 @@
 	'rivwebcapi'.
 	* Changed the default USER_AGENT string from 'Rivendell-C-API' to
 	'rivwebcapi'.
+2018-09-02 Fred Gleason <fredg@paravelsystems.com>
+	* Fixed buffer overflow vulnerability in the test harnesses.
