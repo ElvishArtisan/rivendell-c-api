@@ -354,3 +354,6 @@
 	'rivwebcapi'.
 2018-09-02 Fred Gleason <fredg@paravelsystems.com>
 	* Fixed buffer overflow vulnerability in the test harnesses.
+2018-09-02 Fred Gleason <fredg@paravelsystems.com>
+	* Incremented the library version to 1:1:1.
+	* Incremented the package version to 1.0.0ea00.
