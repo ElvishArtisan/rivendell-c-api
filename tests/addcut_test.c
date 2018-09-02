@@ -22,11 +22,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <rivendell/rd_addcut.h>
-#include <rivendell/rd_createticket.h>
-#include <rivendell/rd_removecut.h>
-#include <rivendell/rd_getuseragent.h>
-#include <rivendell/rd_getversion.h>
+#include <rivwebcapi/rd_addcut.h>
+#include <rivwebcapi/rd_createticket.h>
+#include <rivwebcapi/rd_removecut.h>
+#include <rivwebcapi/rd_getuseragent.h>
+#include <rivwebcapi/rd_getversion.h>
 
 int main(int argc,char *argv[])
 {

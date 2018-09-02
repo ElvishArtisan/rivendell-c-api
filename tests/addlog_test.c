@@ -22,11 +22,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <rivendell/rd_addlog.h>
-#include <rivendell/rd_createticket.h>
-#include <rivendell/rd_deletelog.h>
-#include <rivendell/rd_getuseragent.h>
-#include <rivendell/rd_getversion.h>
+#include <rivwebcapi/rd_addlog.h>
+#include <rivwebcapi/rd_createticket.h>
+#include <rivwebcapi/rd_deletelog.h>
+#include <rivwebcapi/rd_getuseragent.h>
+#include <rivwebcapi/rd_getversion.h>
 
 #include "common.h"
 

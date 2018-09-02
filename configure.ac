@@ -161,10 +161,10 @@ fi
 
 AC_CONFIG_FILES([ \
     docbook/Makefile \
-    rivendell/Makefile \
+    rivwebcapi/Makefile \
     tests/Makefile \
     Makefile \
-    rivendell.pc \
+    rivwebcapi.pc \
     rivwebcapi.spec \
     ])
 AC_OUTPUT()

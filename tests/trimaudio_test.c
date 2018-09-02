@@ -22,10 +22,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <rivendell/rd_trimaudio.h>
-#include <rivendell/rd_createticket.h>
-#include <rivendell/rd_getuseragent.h>
-#include <rivendell/rd_getversion.h>
+#include <rivwebcapi/rd_trimaudio.h>
+#include <rivwebcapi/rd_createticket.h>
+#include <rivwebcapi/rd_getuseragent.h>
+#include <rivwebcapi/rd_getversion.h>
 
 int main(int argc,char *argv[])
 {

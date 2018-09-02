@@ -19,7 +19,7 @@
 ## Use automake to process this into a Makefile.in
 
 AM_CFLAGS = -Wall -I$(top_srcdir)
-LIBS = -L$(top_srcdir)/rivendell
+LIBS = -L$(top_srcdir)/rivwebcapi
 noinst_PROGRAMS = listgroups_test \
 		listgroup_test \
 		listcarts_test \

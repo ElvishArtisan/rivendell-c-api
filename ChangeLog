@@ -346,4 +346,9 @@
 	* Fixed a bug in RD_ImportCart() that caused string values to be
 	double-escaped.
 2018-08-28 Fred Gleason <fredg@paravelsystems.com>
-	* Updated the rd_import(7) man page.
+	* Updated the rd_import(7) man page
+2018-09-02 Fred Gleason <fredg@paravelsystems.com>
+	* Changed the target include directory from 'rivendell/' to
+	'rivwebcapi'.
+	* Changed the default USER_AGENT string from 'Rivendell-C-API' to
+	'rivwebcapi'.

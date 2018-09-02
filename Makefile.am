@@ -1,6 +1,6 @@
 ## automake.am
 ##
-## Top level automake.am for Rivendell
+## Top level automake.am for Rivwebcapi
 ##
 ## Use automake to process this into a Makefile.in
 ##
@@ -24,7 +24,7 @@ if DOCBOOK_AM
   DOCBOOK_AM_OPT = docbook
 endif
 
-SUBDIRS = $(DOCBOOK_AM_OPT) rivendell\
+SUBDIRS = $(DOCBOOK_AM_OPT) rivwebcapi\
           tests
 
 ACLOCAL_AMFLAGS = -I m4
@@ -41,13 +41,13 @@ rpm:	dist
 	rm -rf $(HOME)/rpmbuild/BUILD/rivwebcapi-$(VERSION)
 
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = rivendell.pc
+pkgconfig_DATA = rivwebcapi.pc
 
 EXTRA_DIST = autogen.sh\
              get_distro.sh\
              get_target.sh\
              PACKAGE_VERSION\
-             rivendell.pc.in\
+             rivwebcapi.pc.in\
              rivwebcapi.spec.in
 
 CLEANFILES = *~\
@@ -61,7 +61,7 @@ DISTCLEANFILES = config.guess\
                  config.sub\
                  ltmain.sh\
                  make_slack\
-                 rivendell.pc
+                 rivwebcapi.pc
 
 MAINTAINERCLEANFILES = *~\
                        *.tar.gz\

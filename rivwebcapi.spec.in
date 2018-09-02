@@ -4,7 +4,6 @@ Release:	1%{?dist}
 Summary:	Integration library for Rivendell
 Group:		System Environment/Libraries
 License:	GPLv2
-URL:		https://github.com/RadioFreeAsia/rivendell-c-api
 Source0:	%{name}-%{version}.tar.gz
 BuildRoot: 	/var/tmp/%{name}-@VERSION@
 
@@ -16,7 +15,7 @@ Requires:	rivwebcapi
 
 
 %description
-Rivendell-c-api provides a C binding for the set of Rivendell web API methods,
+Rivwebcapi provides a C binding for the set of Rivendell web API methods,
 allowing third-party applications to access a wide variety of services on
 a Rivendell system.  Rivendell is a full featured radio automation targeted for
 use in professional broadcast environments.
@@ -24,7 +23,7 @@ use in professional broadcast environments.
 
 %description devel
 These are the library components and headers required to develop application
-for the rivendell-c-api library.
+for the rivwebcapi library.
 
 %prep
 %setup -q
@@ -65,46 +64,46 @@ ldconfig
 
 
 %files devel
-%{_includedir}/rivendell/rd_addcart.h
-%{_includedir}/rivendell/rd_addcut.h
-%{_includedir}/rivendell/rd_addlog.h
-%{_includedir}/rivendell/rd_assignschedcode.h
-%{_includedir}/rivendell/rd_audioinfo.h
-%{_includedir}/rivendell/rd_audiostore.h
-%{_includedir}/rivendell/rd_copyaudio.h
-%{_includedir}/rivendell/rd_createticket.h
-%{_includedir}/rivendell/rd_deleteaudio.h
-%{_includedir}/rivendell/rd_deletelog.h
-%{_includedir}/rivendell/rd_editcart.h
-%{_includedir}/rivendell/rd_editcut.h
-%{_includedir}/rivendell/rd_export.h
-%{_includedir}/rivendell/rd_exportpeaks.h
-%{_includedir}/rivendell/rd_getuseragent.h
-%{_includedir}/rivendell/rd_getversion.h
-%{_includedir}/rivendell/rd_import.h
-%{_includedir}/rivendell/rd_listcart.h
-%{_includedir}/rivendell/rd_listcartschedcodes.h
-%{_includedir}/rivendell/rd_listcarts.h
-%{_includedir}/rivendell/rd_listcut.h
-%{_includedir}/rivendell/rd_listcuts.h
-%{_includedir}/rivendell/rd_listgroup.h
-%{_includedir}/rivendell/rd_listgroups.h
-%{_includedir}/rivendell/rd_listlog.h
-%{_includedir}/rivendell/rd_listlogs.h
-%{_includedir}/rivendell/rd_listschedcodes.h
-%{_includedir}/rivendell/rd_listservices.h
-%{_includedir}/rivendell/rd_listsystemsettings.h
-%{_includedir}/rivendell/rd_savelog.h
-%{_includedir}/rivendell/rd_cart.h
-%{_includedir}/rivendell/rd_common.h
-%{_includedir}/rivendell/rd_cut.h
-%{_includedir}/rivendell/rd_group.h
-%{_includedir}/rivendell/rd_schedcodes.h
-%{_includedir}/rivendell/rd_removecart.h
-%{_includedir}/rivendell/rd_removecut.h
-%{_includedir}/rivendell/rd_trimaudio.h
-%{_includedir}/rivendell/rd_unassignschedcode.h
-%{_libdir}/pkgconfig/rivendell.pc
+%{_includedir}/rivwebcapi/rd_addcart.h
+%{_includedir}/rivwebcapi/rd_addcut.h
+%{_includedir}/rivwebcapi/rd_addlog.h
+%{_includedir}/rivwebcapi/rd_assignschedcode.h
+%{_includedir}/rivwebcapi/rd_audioinfo.h
+%{_includedir}/rivwebcapi/rd_audiostore.h
+%{_includedir}/rivwebcapi/rd_copyaudio.h
+%{_includedir}/rivwebcapi/rd_createticket.h
+%{_includedir}/rivwebcapi/rd_deleteaudio.h
+%{_includedir}/rivwebcapi/rd_deletelog.h
+%{_includedir}/rivwebcapi/rd_editcart.h
+%{_includedir}/rivwebcapi/rd_editcut.h
+%{_includedir}/rivwebcapi/rd_export.h
+%{_includedir}/rivwebcapi/rd_exportpeaks.h
+%{_includedir}/rivwebcapi/rd_getuseragent.h
+%{_includedir}/rivwebcapi/rd_getversion.h
+%{_includedir}/rivwebcapi/rd_import.h
+%{_includedir}/rivwebcapi/rd_listcart.h
+%{_includedir}/rivwebcapi/rd_listcartschedcodes.h
+%{_includedir}/rivwebcapi/rd_listcarts.h
+%{_includedir}/rivwebcapi/rd_listcut.h
+%{_includedir}/rivwebcapi/rd_listcuts.h
+%{_includedir}/rivwebcapi/rd_listgroup.h
+%{_includedir}/rivwebcapi/rd_listgroups.h
+%{_includedir}/rivwebcapi/rd_listlog.h
+%{_includedir}/rivwebcapi/rd_listlogs.h
+%{_includedir}/rivwebcapi/rd_listschedcodes.h
+%{_includedir}/rivwebcapi/rd_listservices.h
+%{_includedir}/rivwebcapi/rd_listsystemsettings.h
+%{_includedir}/rivwebcapi/rd_savelog.h
+%{_includedir}/rivwebcapi/rd_cart.h
+%{_includedir}/rivwebcapi/rd_common.h
+%{_includedir}/rivwebcapi/rd_cut.h
+%{_includedir}/rivwebcapi/rd_group.h
+%{_includedir}/rivwebcapi/rd_schedcodes.h
+%{_includedir}/rivwebcapi/rd_removecart.h
+%{_includedir}/rivwebcapi/rd_removecut.h
+%{_includedir}/rivwebcapi/rd_trimaudio.h
+%{_includedir}/rivwebcapi/rd_unassignschedcode.h
+%{_libdir}/pkgconfig/rivwebcapi.pc
 %{_libdir}/librivwebcapi.a
 %{_libdir}/librivwebcapi.la
 %{_mandir}/man7/rd_addcart.7.gz

@@ -22,7 +22,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <rivendell/rd_getversion.h>
+#include <rivwebcapi/rd_getversion.h>
 
 
 int main(int argc,char *argv[])
